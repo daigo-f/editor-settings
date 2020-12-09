@@ -1,0 +1,73 @@
+// Place your key bindings in this file to override the defaults
+[
+   
+    // VSCodeで、エディタとターミナルを往復できるショートカットの定義
+    // Place your key bindings in this file to override the defaultsauto[]
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorFocus"
+    },
+    
+    {
+        "key": "ctrl+oem_comma", // setting.jsonを開く
+        "command": "workbench.action.openSettingsJson"
+    },
+    {
+        "key": "f6", // デバッグをカーソル位置まで進めて止める
+        "command": "-workbench.action.debug.pause",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f6", // デバッグをカーソル位置まで進めて止める
+        "command": "editor.debug.action.runToCursor"
+    },
+    {
+        "key": "ctrl+p", // クイックオープン時の次ファイル選択 (デフォルト削除)
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+p", // クイックオープン時の前ファイル選択 (デフォルト削除)
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+n", // クイックオープン時の次ファイル選択
+        "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+p", // クイックオープン時の前ファイル選択
+        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+
+    // Insert Modeでのカーソル移動
+    {
+        "key": "ctrl+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus && !editorReadOnly && vim.mode != 'Normal'"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "cursorLeft",
+        "when": "editorTextFocus && !editorReadOnly && vim.mode != 'Normal'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "cursorDown",
+        "when": "editorTextFocus && !editorReadOnly && vim.mode != 'Normal'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "editorTextFocus && !editorReadOnly && vim.mode != 'Normal'"
+    },
+]
+
