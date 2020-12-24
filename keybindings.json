@@ -68,6 +68,7 @@
         "key": "ctrl+k",
         "command": "cursorUp",
         "when": "editorTextFocus && !editorReadOnly && vim.mode != 'Normal'"
-    },
+    }
 ]
+
 
